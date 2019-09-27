@@ -1,0 +1,22 @@
+{
+  "name": "lenoma.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihailSir/lenoma.ru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihailSir/lenoma.ru/issues"
+  },
+  "homepage": "https://github.com/MihailSir/lenoma.ru#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
