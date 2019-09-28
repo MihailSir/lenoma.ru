@@ -1,0 +1,32 @@
+.search {
+  border-bottom: solid 2px #c1a067;
+  display: flex;
+  flex-direction: column;
+}
+.search__search {
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  background: url(../img/search@2x.png) no-repeat 100% 70%;
+  background-size: 2%;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.search__search:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.search__search::placeholder {
+  font-family: 'PTSansB', sans-serif;
+  color:#302a31;
+}
+.search__basket {
+background: transparent;
+  border: none;
+}
+.search__basket img {
+  height: 80px;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.info {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 10px;
+}
+.info__logo {
+max-height:120px ;
+}
+
+.info__main {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info__info {
+  display: flex;
+  padding-top: 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.info__item {
+  font-family: 'PTSansB', sans-serif;
+  color:#302a31;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+.info__item--tel {
+  padding-left: 0;
+}
+.info__item-last {
+  text-align: end;
+}
