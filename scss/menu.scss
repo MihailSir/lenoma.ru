@@ -1,0 +1,27 @@
+.menu {
+  background-color: #302a31;
+}
+.menu__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.menu__item {
+  list-style-type: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.menu__item-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PTSansB', sans-serif;
+  color:#ffffff;
+  text-decoration: none;
+}
+.menu__item--last{
+  background-color:#c16774;
+  padding-left: 58px;
+}
+.menu__item-link--last {
+  text-transform: uppercase;
+}

@@ -1,0 +1,13 @@
+.product {
+  display: flex;
+}
+.product__banner {
+  display: flex;
+  background: url("../img/women@2x.png") no-repeat center/cover;
+}
+.product__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PTSansB', sans-serif;
+  color: #302a31;
+}

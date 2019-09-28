@@ -2,6 +2,7 @@
   display: flex;
   justify-content:space-between;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .info__logo {
 max-height:120px ;
@@ -33,4 +34,12 @@ max-height:120px ;
 }
 .info__item-last {
   text-align: end;
+}
+.info__basket {
+  background: transparent;
+  border: none;
+}
+.info__basket img {
+  height: 80px;
+  cursor: pointer;
 }
