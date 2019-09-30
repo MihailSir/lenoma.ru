@@ -1,10 +1,9 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  margin-left: -1px;
-  border-left: 1px solid transparent;
   padding-bottom: 100px;
 }
+
 .slider__cards {
   border-left: 1px solid #eceaed;
   display: flex;
@@ -32,7 +31,12 @@
   text-align: center;
   color: #302a31;
   font-weight: bold;
-text-decoration: none;
+  text-decoration: none;
+}
+
+.slider__caption--long {
+  padding-top: 10px;
+  line-height: 16px;
 }
 
 .slider__text {
@@ -63,5 +67,5 @@ text-decoration: none;
   position: absolute;
   padding: 8px;
   font-weight: bold;
-align-self: flex-start;
+  align-self: flex-start;
 }
