@@ -4,13 +4,39 @@
 }
 .footer__inner {
 display: flex;
+  justify-content: space-between;
 }
 .footer__inner-block {
-
+margin-top: 75px;
 }
 .footer__caption {
-
+color:#ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .footer__text {
-
+  font-size: 14px;
+  line-height: 17px;
+  color: #a29fa2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.footer__messenger {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.footer__contacts {
+  color:#ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer__callback {
+  margin-top: 35px;
+  padding-right: 50px;
 }
