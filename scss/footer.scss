@@ -5,6 +5,8 @@
 .footer__inner {
 display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: solid 1px #3f3a41;
 }
 .footer__inner-block {
 margin-top: 75px;
@@ -15,6 +17,7 @@ color:#ffffff;
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 .footer__text {
   font-size: 14px;
@@ -39,4 +42,15 @@ color:#ffffff;
 .footer__callback {
   margin-top: 35px;
   padding-right: 50px;
+}
+.footer__inner--footer {
+  border: none;
+  padding-top: 45px;
+}
+.footer__published {
+  display: flex;
+  padding-right: 40px;
+}
+.footer__published img {
+  margin-right: 15px;
 }

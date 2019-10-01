@@ -130,6 +130,9 @@ body {
   padding-top: 23px;
   padding-bottom: 23px; }
 
+.menu__item-link:hover {
+  color: #7BA3A5; }
+
 .menu__item-link {
   font-size: 13px;
   line-height: 24px;
@@ -421,7 +424,9 @@ body {
 
 .footer__inner {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: solid 1px #3f3a41; }
 
 .footer__inner-block {
   margin-top: 75px; }
@@ -431,7 +436,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 30px; }
 
 .footer__text {
   font-size: 14px;
@@ -457,6 +463,17 @@ body {
   margin-top: 35px;
   padding-right: 50px; }
 
+.footer__inner--footer {
+  border: none;
+  padding-top: 45px; }
+
+.footer__published {
+  display: flex;
+  padding-right: 40px; }
+
+.footer__published img {
+  margin-right: 15px; }
+
 .callback {
   margin-top: 35px; }
 
@@ -475,7 +492,6 @@ body {
   padding-bottom: 20px; }
 
 .mail {
-  border-bottom: solid 2px #c1a067;
   display: flex;
   flex-direction: column; }
 
@@ -485,9 +501,11 @@ body {
   text-transform: uppercase;
   border: none;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 10px;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom: solid 2px #c1a067; }
 
 .mail__input:active, :hover, :focus {
   outline: 0;
@@ -496,3 +514,51 @@ body {
 .mail__input::placeholder {
   font-family: 'PTSansB', sans-serif;
   color: #cbcacb; }
+
+.mail__button {
+  background-color: transparent;
+  border: none;
+  color: #c1a067;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  float: right;
+  margin-left: 24px;
+  cursor: pointer;
+  margin-bottom: 55px; }
+
+.mail__button:hover {
+  color: #795f3c; }
+
+.ingram {
+  display: flex; }
+
+.ingram__circle {
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer; }
+
+.ingram__img {
+  padding: 13px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ingram__article {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  text-decoration: none; }
+
+.ingram__article:hover {
+  color: #bababa; }
+
+.ingram__circle:hover {
+  background-color: #bababa; }
