@@ -79,7 +79,7 @@
         </button>
     </section>
     <nav class="menu">
-        <ul class="container menu__inner">
+        <ul class="menu__inner">
             <li class="menu__item">
                 <a href="#" class="menu__item-link">Акция</a>
             </li>
@@ -107,10 +107,10 @@
             <li class="menu__item">
                 <a href="#" class="menu__item-link">Подарки</a>
             </li>
-            <li class="menu__item menu__item--last">
-                <a href="#" class="menu__item-link menu__item-link--last">sale</a>
-            </li>
         </ul>
+        <li class="menu__item menu__item--last">
+            <a href="#" class="menu__item-link menu__item-link--last">sale</a>
+        </li>
     </nav>
 </header>
 <main class="container">
@@ -120,10 +120,25 @@
             <a href="#" class="product__info-text">подробнее</a>
         </div>
         <div class="product__banner">
-            <a href="#">
+            <a class="product__info-img" href="#">
                 <img class="product__info-img" src="img/parfum@2x.png" alt="giorgio">
             </a>
             <p class="product__text">от 4 990 Р.-</p>
+            <div class="recommendation">
+                <div class="recommendation__caption">наши рекомендации</div>
+                <hr class="recommendation__line" width="350" color="#c1a067">
+                <div class="recommendation__section">
+                    <p class="">
+                        <a href="#" class="recommendation__text">Интересные предложения</a>
+                    </p>
+                    <p class="">
+                        <a href="#" class="recommendation__text">Женская парфюмерия</a>
+                    </p>
+                    <p class="">
+                        <a href="#" class="recommendation__text">Товар со скидками</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <aside class="aside">
@@ -500,7 +515,8 @@
             <div class="footer__caption">подписаться на новости</div>
             <div class="mail">
                 <form action="#">
-                    <input class="mail__input" type="search" placeholder="введите email" name="search">
+                    <input class="mail__input" type='email' id=”email” name=”email” required
+                           placeholder="введите email">
                     <button class="mail__button">подписаться</button>
                 </form>
             </div>
@@ -513,7 +529,7 @@
         </div>
     </section>
     <section class="footer__inner footer__inner--footer container">
-        <div class="footer__text">&copy 2017. Lenoma.ru </div>
+        <div class="footer__text">&copy 2017. Lenoma.ru</div>
         <div class="footer__published">
             <img src="img/эврика.png" alt="published" width="5%">
             <span class="footer__text">Разработка и поддержка — «ЭВРИКА»</span>

@@ -5,6 +5,11 @@
   align-items: center;
   padding-bottom: 70px;
 }
+.product__line {
+  position: absolute;
+  background: #c1a067;
+  size: 2px;
+}
 .product__banner {
   display: flex;
   background: url(../img/women@2x.png) no-repeat center/cover;
@@ -18,7 +23,7 @@
   line-height: 24px;
   font-family: 'PTSansB', sans-serif;
   padding-top: 200px;
-  padding-left: 50px;
+  padding-left: 157px;
   color: #302a31;
 }
 .product__info {
@@ -36,7 +41,11 @@
 }
 .product__info-img {
   height: 270px;
-  padding-left: 116px;
+  position: relative;
+  left: 9%;
+}
+.product__info-img img {
+  height: 100%;
 }
 .product__name {
   position: absolute;

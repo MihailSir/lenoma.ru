@@ -118,12 +118,17 @@ body {
   color: #302a31; }
 
 .menu {
-  background-color: #302a31; }
+  background-color: #302a31;
+  display: flex;
+  justify-content: space-between; }
 
 .menu__inner {
   display: flex;
   justify-content: space-between;
-  padding-left: 0; }
+  flex-grow: 1;
+  padding: 0;
+  max-width: 1110px;
+  margin: 0 auto; }
 
 .menu__item {
   list-style-type: none;
@@ -142,7 +147,7 @@ body {
 
 .menu__item--last {
   background-color: #c16774;
-  padding-left: 58px; }
+  width: 13%; }
 
 .menu__item-link--last {
   text-transform: uppercase; }
@@ -153,6 +158,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 70px; }
+
+.product__line {
+  position: absolute;
+  background: #c1a067;
+  size: 2px; }
 
 .product__banner {
   display: flex;
@@ -167,7 +177,7 @@ body {
   line-height: 24px;
   font-family: 'PTSansB', sans-serif;
   padding-top: 200px;
-  padding-left: 50px;
+  padding-left: 157px;
   color: #302a31; }
 
 .product__info {
@@ -185,7 +195,11 @@ body {
 
 .product__info-img {
   height: 270px;
-  padding-left: 116px; }
+  position: relative;
+  left: 9%; }
+
+.product__info-img img {
+  height: 100%; }
 
 .product__name {
   position: absolute;
@@ -204,6 +218,8 @@ body {
   display: flex;
   font-size: 13px;
   line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
   font-family: 'PTSansB', sans-serif; }
 
 .aside__item--last {
@@ -505,7 +521,8 @@ body {
   padding-bottom: 20px;
   padding-top: 10px;
   background-color: transparent;
-  border-bottom: solid 2px #c1a067; }
+  border-bottom: solid 2px #c1a067;
+  color: white; }
 
 .mail__input:active, :hover, :focus {
   outline: 0;
@@ -562,3 +579,36 @@ body {
 
 .ingram__circle:hover {
   background-color: #bababa; }
+
+.recommendation {
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 40px;
+  right: 70px;
+  top: 290px; }
+
+.recommendation__caption {
+  color: #302a31;
+  font-size: 20px;
+  padding-bottom: 35px;
+  width: 240px; }
+
+.recommendation__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #302a31;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: bold; }
+
+.recommendation__text:hover {
+  color: #c16774; }
+
+.recommendation__line {
+  padding-bottom: 2px;
+  position: absolute; }
+
+.recommendation__section {
+  padding-top: 20px; }
