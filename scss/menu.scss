@@ -11,10 +11,21 @@
   max-width: 1110px;
   margin: 0 auto;
 }
-.menu__item {
+%menu__item {
   list-style-type: none;
   padding-top: 23px;
   padding-bottom: 23px;
+}
+.menu__item--hair,
+.menu__item--make-up,
+.menu__item--men,
+.menu__item--novelty,
+.menu__item--organic,
+.menu__item--perfume,
+.menu__item--skin,
+.menu__item--surprise,
+.menu__item {
+  @extend  %menu__item
 }
 .menu__item-link:hover {
 color: #7BA3A5;
