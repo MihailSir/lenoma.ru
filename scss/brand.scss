@@ -7,6 +7,13 @@
 .brand__top {
   flex: 0 0 16.6%;
 }
+
 .brand__img {
-width: 100%;
+  width: 100%;
+}
+
+.brand__img:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }

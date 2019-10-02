@@ -3,7 +3,7 @@
   color: #302a31;
   text-transform: uppercase;
   font-family: 'PTSansB', sans-serif;
-  padding: 0px 90px 25px;
+  padding: 0 0 25px;
   border-bottom: solid 2px #c1a067;
   display: inline-block;
   left: 50%;
@@ -11,6 +11,8 @@
   transform: translate(-50%, 0);
   margin-bottom: 70px;
   font-weight: bold;
+  width: 32%;
+  text-align: center;
 }
 .caption__subtitle {
   display: block;

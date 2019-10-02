@@ -27,6 +27,12 @@ color:#ffffff;
   display: flex;
   align-items: center;
 }
+.footer__text:hover {
+  color: #ffffff;
+}
+.footer__text--messenger:hover {
+  color: #a29fa2;
+}
 .footer__messenger {
   padding-left: 15px;
   padding-top: 10px;

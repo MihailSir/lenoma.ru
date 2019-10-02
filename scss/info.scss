@@ -22,6 +22,9 @@ max-height:120px ;
   align-items: center;
   justify-content: space-between;
 }
+.info__info a {
+  text-decoration: none;
+}
 .info__item {
   font-family: 'PTSansB', sans-serif;
   color:#302a31;
@@ -30,6 +33,13 @@ max-height:120px ;
   padding-left: 15px;
   text-transform: uppercase;
 }
+.info__item:hover {
+  color: #a992aa;
+}
+.info__item--last:hover {
+  color:#302a31;
+}
+
 .info__item--tel {
   padding-left: 0;
 }
@@ -43,4 +53,7 @@ max-height:120px ;
 .info__basket img {
   height: 80px;
   cursor: pointer;
+}
+.info__basket img:hover {
+  border-radius: 50%;
 }
