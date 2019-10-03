@@ -2,20 +2,24 @@
   background-color: #302a31;
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
 }
+
 .menu__inner {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
   padding: 0;
-  max-width: 1110px;
-  margin: 0 auto;
 }
+
 %menu__item {
   list-style-type: none;
   padding-top: 23px;
   padding-bottom: 23px;
+  justify-content: center;
+  display: flex;
 }
+
 .menu__item--hair,
 .menu__item--make-up,
 .menu__item--men,
@@ -25,23 +29,47 @@
 .menu__item--skin,
 .menu__item--surprise,
 .menu__item {
-  @extend  %menu__item
+  @extend %menu__item
 }
+
 .menu__item-link:hover {
-color: #7BA3A5;
+  color: #7BA3A5;
 }
+
 .menu__item-link {
   font-size: 13px;
   line-height: 24px;
   font-family: 'PTSansB', sans-serif;
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
-.menu__item--last{
-  background-color: #c16774;
-  width: 13%;
+
+.menu__item--last {
+justify-content: center;
 }
+
 .menu__item-link--last {
   text-transform: uppercase;
+  color: #c16774;
 
+}
+
+.menu__item--last:hover > .recommendation {
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 40px;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-34%, 24%);
+  @media all and (max-width: 1350px) {
+    transform: translate(-143px, 24%);
+  }
+}
+
+.menu__item:first-child {
+  @media all and (max-width: 1350px) {
+    justify-content: start;
+  }
 }

@@ -11,20 +11,25 @@
   size: 2px;
 }
 .product__banner {
+  div {
+    display: flex;
+    background: url(../img/women@2x.png) no-repeat center/cover;
+    height: 490px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   display: flex;
-  background: url(../img/women@2x.png) no-repeat center/cover;
-  height: 490px;
   flex-grow: 1;
-  align-items: center;
-  justify-content: center;
 }
 .product__text {
   font-size: 13px;
   line-height: 24px;
   font-family: 'PTSansB', sans-serif;
   padding-top: 200px;
-  padding-left: 157px;
+  position: relative;
   color: #302a31;
+  left: -17%;
 }
 .product__info {
 }
@@ -46,7 +51,7 @@
 .product__info-img {
   height: 270px;
   position: relative;
-  left: 9%;
+  left: -21%;
 }
 .product__info-img img {
   height: 100%;
@@ -57,11 +62,23 @@
   transform: scale(1.2);
 }
 .product__name {
-  position: absolute;
+  position: relative;
   font-weight: bold;
   font-size: 50px;
   line-height: 70px;
-  margin-top: -45px;
+  margin-top: -35px;
   text-transform: uppercase;
+  left: -37%;
+  @media all and (max-width: 1350px) {
+    display: none;
+
+  }
 }
 
+.product__name--copy {
+  display: none;
+  @media all and (max-width: 1350px) {
+    display: inline-block;
+    top: 0;
+  }
+}

@@ -21,6 +21,9 @@ max-height:120px ;
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
+  @media all and (max-width: 1140px) {
+    display: none;
+  }
 }
 .info__info a {
   text-decoration: none;

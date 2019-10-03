@@ -1,26 +1,32 @@
 %submenu {
   position: absolute;
-  left: -1px;
   z-index: 5;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
   transition: .3s ease-in-out;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 %hover {
   visibility: visible;
   opacity: 1;
-  transform: translate(44px,23px);
   border-radius: 10px;
   background-color: #eae1de;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(31%);
 }
+
 .submenu__item {
   position: relative;
   padding: 10px 0;
   list-style: none;
 }
+
 .submenu-link {
   background: transparent;
   color: #1c1c1c;
@@ -30,7 +36,11 @@
   padding: 10px 0 0 0;
   text-decoration: none;
 }
-.submenu-link:hover {color: #ddbe86;}
+
+.submenu-link:hover {
+  color: #ddbe86;
+}
+
 .submenu .submenu {
   position: absolute;
   top: 0;
@@ -38,43 +48,16 @@
   left: -webkit-calc(100% - 1px);
 }
 
-.menu__item:hover>.submenu,
-.menu__item--hair:hover>.submenu__hair,
-.menu__item--organic:hover>.submenu__organic,
-.menu__item--skin:hover>.submenu__skin,
-.menu__item--make-up:hover>.submenu__make-up,
-.menu__item--men:hover>.submenu__men,
-.menu__item--novelty:hover>.submenu__novelty,
-.menu__item--surprise:hover>.submenu__surprise,
-.menu__item--perfume:hover>.submenu__perfume {
-  @extend  %hover
-}
-.menu__item:hover>.submenu {
-  transform: translate(34px,23px);
-}
-.menu__item--hair:hover>.submenu__hair {
-  transform: translate(700px,23px);
-}
-.menu__item--organic:hover>.submenu__organic {
-  transform: translate(990px,23px);
-}
-.menu__item--skin:hover>.submenu__skin {
-  transform: translate(540px,23px);
-}
-.menu__item--make-up:hover>.submenu__make-up {
-  transform: translate(410px,23px);
-}
-.menu__item--men:hover>.submenu__men {
-  transform: translate(860px,23px);
-}
-.menu__item--novelty:hover>.submenu__novelty {
-  transform: translate(292px,23px);
-}
-.menu__item--surprise:hover>.submenu__surprise {
-  transform: translate(1100px,23px);
-}
-.menu__item--perfume:hover>.submenu__perfume {
-  transform: translate(155px,23px);
+.menu__item:hover > .submenu,
+.menu__item--hair:hover > .submenu__hair,
+.menu__item--organic:hover > .submenu__organic,
+.menu__item--skin:hover > .submenu__skin,
+.menu__item--make-up:hover > .submenu__make-up,
+.menu__item--men:hover > .submenu__men,
+.menu__item--novelty:hover > .submenu__novelty,
+.menu__item--surprise:hover > .submenu__surprise,
+.menu__item--perfume:hover > .submenu__perfume {
+  @extend %hover
 }
 
 .submenu__hair,
@@ -86,7 +69,5 @@
 .submenu__skin,
 .submenu__surprise,
 .submenu {
-  @extend  %submenu
+  @extend %submenu
 }
-
-

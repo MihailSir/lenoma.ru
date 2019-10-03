@@ -79,12 +79,18 @@
     [dir="rtl"] & {
         left: auto;
         right: -25px;
+        @media all and (max-width: 1350px) {
+            right:15px;
+        }
     }
     &:before {
         content: @slick-prev-character;
         [dir="rtl"] & {
             content: @slick-next-character;
         }
+    }
+    @media all and (max-width: 1350px) {
+        left:15px;
     }
 }
 

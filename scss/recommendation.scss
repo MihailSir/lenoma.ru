@@ -1,16 +1,24 @@
 .recommendation {
   position: absolute;
-  background-color: #f9f9f9;
-  padding: 40px;
-  right: 70px;
-  top: 290px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-95%, 20%);
+  transition: .3s ease-in-out;
+  padding: 0;
+
 }
+
 .recommendation__caption {
-  color:#302a31;
+  color: #302a31;
   font-size: 20px;
   padding-bottom: 35px;
   width: 240px;
+  @media all and (max-width: 1550px) {
+    border-bottom: 2px solid #c1a067;
+  }
 }
+
 .recommendation__text {
   font-size: 16px;
   line-height: 24px;
@@ -21,6 +29,7 @@
   margin: 0;
   font-weight: bold;
 }
+
 .recommendation__text:hover {
   color: #c16774;
 }
@@ -28,7 +37,12 @@
 .recommendation__line {
   padding-bottom: 2px;
   position: absolute;
+  @media all and (max-width: 1550px) {
+    display: none;
+
+  }
 }
+
 .recommendation__section {
   padding-top: 20px;
 }

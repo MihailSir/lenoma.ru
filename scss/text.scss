@@ -1,7 +1,9 @@
 .text {
   display: flex;
   margin-top: -20px;
-
+  @media all and (max-width: 900px) {
+    margin-bottom: 50px;
+  }
 }
 .text__article {
   display: flex;
@@ -15,4 +17,11 @@
   position: relative;
   top: -170px;
   padding: 150px 25px 35px;
+  @media all and (max-width: 1350px) {
+    top: -47px;
+    padding: 25px 25px 35px;
+  }
+  @media all and (max-width: 900px) {
+    top: -15px;
+      }
 }
