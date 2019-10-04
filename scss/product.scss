@@ -4,24 +4,41 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 70px;
+  @media all and(max-width: 900px) {
+    display: none;
+
+  }
 }
+
+.product--visible {
+  display: none;
+  @media all and (max-width: 900px) {
+    display: flex;
+    padding-top: 25px;
+  }
+}
+
 .product__line {
   position: absolute;
   background: #c1a067;
   size: 2px;
 }
+
 .product__banner {
-  div {
     display: flex;
     background: url(../img/women@2x.png) no-repeat center/cover;
     height: 490px;
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-  display: flex;
   flex-grow: 1;
+  @media all and (max-width: 900px) {
+    flex-grow: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 .product__text {
   font-size: 13px;
   line-height: 24px;
@@ -30,9 +47,15 @@
   position: relative;
   color: #302a31;
   left: -17%;
+  @media all and (max-width: 900px) {
+    position: static;
+    padding-top: 20px;
+  }
 }
+
 .product__info {
 }
+
 .product__info-text {
   font-size: 14px;
   line-height: 24px;
@@ -44,23 +67,36 @@
   padding: 0 140px 20px 0;
   position: relative;
   top: 100px;
+  @media all and (max-width: 900px) {
+    position: static;
+    padding: 0;
+  }
 }
+
 .product__info-text:hover {
   color: #56472b;
 }
+
 .product__info-img {
   height: 270px;
   position: relative;
   left: -21%;
+  @media all and (max-width: 900px) {
+    position: static;
+    margin-top: 20px;
+  }
 }
+
 .product__info-img img {
   height: 100%;
 }
+
 .product__info-img img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .product__name {
   position: relative;
   font-weight: bold;
@@ -71,7 +107,18 @@
   left: -37%;
   @media all and (max-width: 1350px) {
     display: none;
-
+  }
+  @media all and (max-width: 900px) {
+    display: block;
+    position: static;
+    font-size: 30px;
+    line-height: 35px;
+    color: black;
+    margin: 0;
+    text-align: center;
+  }
+  @media all and (max-width: 400px) {
+    font-size: 20px;
   }
 }
 
@@ -81,4 +128,15 @@
     display: inline-block;
     top: 0;
   }
+  @media all and (max-width: 900px) {
+    display: none;
+  }
 }
+
+  .product__banner div {
+    display: flex;
+    background: url(../img/women@2x.png) no-repeat center/cover;
+    height: 490px;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }

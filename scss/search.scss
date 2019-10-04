@@ -13,6 +13,16 @@
   width: 100%;
   margin-bottom: 20px;
   padding-top: 10px;
+  @media all and (max-width: 400px) {
+    display: none;
+    margin-bottom: 10px;
+  }
+}
+.search__search--visible {
+  display: none;
+  @media all and (max-width: 400px) {
+    display: block;
+  }
 }
 .search__search:active, :hover, :focus {
   outline: 0;
@@ -22,4 +32,7 @@
 .search__search::placeholder {
   font-family: 'PTSansB', sans-serif;
   color:#302a31;
+  @media all and (max-width: 450px) {
+    ;
+  }
 }

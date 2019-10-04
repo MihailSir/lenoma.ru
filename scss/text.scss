@@ -1,14 +1,27 @@
 .text {
   display: flex;
   margin-top: -20px;
+}
+.text--hidden {
   @media all and (max-width: 900px) {
-    margin-bottom: 50px;
+    display: none;
+  }
+}
+.text--visible {
+  display: none;
+  @media all and (max-width: 900px) {
+    display:flex ;
+    margin-bottom: 10px;
   }
 }
 .text__article {
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;
+  @media all and (max-width: 900px) {
+    flex: 0 0 100%;
+    margin: 0 5px;
+  }
 }
 .text__news {
   background: #f9f9f9;

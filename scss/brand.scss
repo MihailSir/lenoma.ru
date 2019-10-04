@@ -2,10 +2,24 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
+  @media all and (max-width: 600px) {
+display: none;
+  }
+}
+.brand--visible {
+  display: none;
+  justify-content: space-around;
+  padding-bottom: 70px;
+  @media all and (max-width: 600px) {
+    display: flex;
+  }
 }
 
 .brand__top {
   flex: 0 0 16.6%;
+  @media all and (max-width: 600px) {
+    flex: 0 0 33.33%;
+  }
 }
 
 .brand__img {

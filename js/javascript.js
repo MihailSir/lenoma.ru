@@ -1,4 +1,6 @@
-$(document).ready(function(){
+'use strict';
+
+$(document).ready(function () {
     $('.slider').slick({
         dots: false,
         infinite: true,
@@ -22,20 +24,32 @@ $(document).ready(function(){
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     dots: true,
+                    arrows: false
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 450,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
                 }
             }]
 
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.brand-list').slick({
         dots: false,
         infinite: true,
@@ -59,16 +73,50 @@ $(document).ready(function(){
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     dots: true,
+                    arrows: false,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 700,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
                 }
             }]
 
     });
+});
+
+$(".open").click(function () {
+
+    $(".dropdown").css({"display": "block"});
+
+    $(".close").css({"display": "block"});
+
+    $(".open").css({"display": "none"});
+
+
+});
+
+$('.close').click(function () {
+
+    $(".close").css({"display": "none"});
+
+    $(".open").css({"display": "block"});
+
+    $(".dropdown").css({"display": "none"});
+
+
 });
 

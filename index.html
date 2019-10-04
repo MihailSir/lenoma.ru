@@ -13,6 +13,26 @@
 </head>
 <body>
 <header>
+    <div class="open container">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+    </div>
+    <div class="close container">&times
+        <div class="dropdown">
+            <div class="dropdown__menu">
+                <p class="dropdown__item-link"><a href="#">О магазине</a></p>
+                <p class="dropdown__item-link"><a href="#">Оплата</a></p>
+                <p class="dropdown__item-link"><a href="#">Доставка</a></p>
+                <p class="dropdown__item-link"><a href="#">Отзывы</a></p>
+                <p class="dropdown__item-link"><a href="#">Новости</a></p>
+                <p class="dropdown__item-link"><a href="#">Статьи</a></p>
+                <p class="dropdown__item-link"><a href="#">Контакты</a></p>
+                <p class="dropdown__item-link"><a href="#">Личный кабинет</a></p>
+                <p class="dropdown__item-link"><a href="#">Избранное</a></p>
+            </div>
+        </div>
+    </div>
     <nav class="navigation container">
         <ul class="navigation__inner">
             <li class="navigation__item">
@@ -66,7 +86,11 @@
                 <form action="#">
                     <input class="search__search" type="search" placeholder="поиск по каталогу товаров" name="search">
                 </form>
+                <form action="#">
+                    <input class="search__search search__search--visible" type="search" placeholder="поиск" name="search">
+                </form>
             </div>
+
             <div class="info__info">
                 <a href="#" class="">
                     <span class="info__item info__item--tel">+7 /495/ 542-05-95</span>
@@ -269,6 +293,25 @@
     </nav>
 </header>
 <main class="container">
+    <input type="checkbox" id="nav-toggle" hidden>
+    <nav class="nav">
+        <!--        <h2  class="logo">-->
+        <!--           categories-->
+        <!--        </h2>-->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <ul>
+            <li><a href="#1">Акция</a></li>
+            <li><a href="#2">Парфюмерия</a>
+            <li><a href="#3">Новинки</a>
+            <li><a href="#4">Макияж</a>
+            <li><a href="#5">Уход за кожей</a>
+            <li><a href="#6">Уход за волосами</a>
+            <li><a href="#7">Для мужчин</a>
+            <li><a href="#8">Organic</a>
+            <li><a href="#9">Подарки</a>
+            <li><a href="#10">SALE</a>
+        </ul>
+    </nav>
     <div class="product">
         <div class="product__info">
             <a href="#" class="product__info-text">подробнее</a>
@@ -282,6 +325,16 @@
                 </a>
                 <p class="product__text">от 4 990 Р.-</p>
             </div>
+        </div>
+    </div>
+    <div class="product product--visible">
+        <div class="product__banner">
+            <a class="product__info-img" href="#">
+                <img class="product__info-img" src="img/parfum@2x.png" alt="giorgio">
+            </a>
+            <p class="product__text">от 4 990 Р.-</p>
+            <a href="#" class="product__info-text"><p class="product__name">идеальный аромат <br>от giorgio armani</p>
+            </a>
         </div>
     </div>
     <aside class="aside">
@@ -299,6 +352,23 @@
         </div>
         <div class="aside__item aside__item--last">
             <div class="aside__line">.</div>
+            <div>срочная доставка</div>
+        </div>
+
+    </aside>
+    <aside class="aside aside--visible">
+        <div class="aside__item">
+            <div>оригинальная продукция</div>
+        </div>
+        <div class="aside__item">
+
+            <div>бесплатная доставка по москве и россии</div>
+        </div>
+        <div class="aside__item">
+
+            <div>система скидок</div>
+        </div>
+        <div class="aside__item aside__item--last">
             <div>срочная доставка</div>
         </div>
 
@@ -556,6 +626,23 @@
             </a>
         </div>
     </div>
+    <div class="brand brand--visible">
+        <div class="brand__top">
+            <a href="#">
+                <img src="img/Calvin@2x.png" alt="Calvin" class="brand__img">
+            </a>
+        </div>
+        <div class="brand__top">
+            <a href="#">
+                <img src="img/bvlgari@2x.png" alt="bvlgari" class="brand__img">
+            </a>
+        </div>
+        <div class="brand__top">
+            <a href="#">
+                <img src="img/Christian@2x.png" alt="Christian" class="brand__img">
+            </a>
+        </div>
+    </div>
     <div class="brand-list">
         <div class="brand-list__block">
             <p class="brand-list__item"><a href="#" class="brand-list__link">Azzaro</a>
@@ -688,8 +775,8 @@
             <p class="brand-list__item"><a href="#" class="brand-list__link">Yves Saint Laurent</a></p>
         </div>
     </div>
-    <div class="caption">статьи и новости</div>
-    <text class="text">
+    <div class="caption caption--hidden">статьи и новости</div>
+    <text class="text text--hidden">
         <div class="text__article">
             <div class="article">
                 <p class="article__caption">парфюмерия в нашей жизни</p>
@@ -717,6 +804,61 @@
                 </div>
             </div>
         </div>
+        <div class="text__news">
+            <div class="article article--perfumery">
+                <p class="article__caption article__caption--perfumery">Geza Shoen, Mark Buxton и Bertrand
+                    Duchaufour</p>
+                <p class="article__date">26 апреля 2017 года</p>
+                <p class="article__text article__text--news">три поистине великих парфюмера, объединили свои общие труды
+                    и выпустили коллекция под названием Renegades.</p>
+            </div>
+            <div class="article article--karloff">
+                <p class="article__caption">No Ordinary Man от Korloff Paris</p>
+                <p class="article__date">26 апреля 2017 года</p>
+                <p class="article__text article__text--news">мужской аромат выпущенный в 2016 году воплощает силу духа и
+                    отвагу</p>
+            </div>
+            <div class="article article--creed">
+                <p class="article__caption article__caption--creed ">Новый аромат представляет собой</p>
+                <p class="article__date article__date--creed">26 апреля 2017 года</p>
+                <p class="article__text article__text--news">Новинка 2016 года для мужчин от торгового дома Amouage -
+                    Bracken for Men. обладателя.</p>
+            </div>
+            <p><a href="#" class="article__all article__all--news">смотреть все новости</a></p>
+        </div>
+    </text>
+    <div class="caption caption--visible">статьи</div>
+    <text class="text text--visible">
+        <div class="text__article">
+            <div class="article">
+                <p class="article__caption">парфюмерия в нашей жизни</p>
+                <p class="article__date">26 апреля 2017 года</p>
+                <p class="article__text">Как ароматы могут влиять на ваше настроение, самочувствие, деловые отношения и
+                    любовные завоевания? Все секреты магической силы различных парфюмов, вы,
+                    сможете открыть для себя, прочитав эту статью!</p>
+            </div>
+            <div class="article">
+                <p class="article__caption">Топ женских ароматов - Весна 2016</p>
+                <p class="article__date">26 апреля 2017 года</p>
+                <p class="article__text">Как ароматы могут влиять на ваше настроение, самочувствие, деловые отношения и
+                    любовные завоевания? Все секреты магической силы различных парфюмов, вы,
+                    сможете открыть для себя, прочитав эту статью!</p>
+            </div>
+            <div class="article">
+                <p class="article__caption article__caption--long">Победители парфюмерных премий Art and Olfaction
+                    Awards 2014 и Canadian Fragrance Awards 2014</p>
+                <p class="article__date">26 апреля 2017 года</p>
+                <div>
+                    <p class="article__text">В Канаде прошло награждения победителей девятой ежегодной премии ароматов
+                        «Canadian Fragrance Awards 2014».</p>
+
+                    <p><a href="#" class="article__all">смотреть все статьи</a></p>
+                </div>
+            </div>
+        </div>
+    </text>
+    <div class="caption caption--visible">новости</div>
+    <text class="text text--visible">
         <div class="text__news">
             <div class="article article--perfumery">
                 <p class="article__caption article__caption--perfumery">Geza Shoen, Mark Buxton и Bertrand

@@ -1,0 +1,27 @@
+.hamburger {
+  width: 20px;
+  height: 3px;
+  background-color: #7a7a41;
+  margin-bottom: 5px;
+}
+
+.open {
+  display: none;
+  @media all and (max-width: 900px) {
+      display: block;
+  }
+}
+
+.open, .close {
+  position: absolute;
+  font-size: 40px;
+  line-height: 20px;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+  color: #7a7a41;
+}
+

@@ -1,12 +1,17 @@
 .info {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bold;
 }
+
 .info__logo {
-max-height:120px ;
+  max-height: 120px;
+  @media all and (max-width: 600px) {
+    height: 50px;
+    margin-top: 36px;
+  }
 }
 
 .info__main {
@@ -15,6 +20,7 @@ max-height:120px ;
   flex-direction: column;
   justify-content: center;
 }
+
 .info__info {
   display: flex;
   padding-top: 10px;
@@ -25,38 +31,52 @@ max-height:120px ;
     display: none;
   }
 }
+
 .info__info a {
   text-decoration: none;
 }
+
 .info__item {
   font-family: 'PTSansB', sans-serif;
-  color:#302a31;
+  color: #302a31;
   font-size: 14px;
   line-height: 24px;
   padding-left: 15px;
   text-transform: uppercase;
 }
+
 .info__item:hover {
   color: #a992aa;
 }
+
 .info__item--last:hover {
-  color:#302a31;
+  color: #302a31;
 }
 
 .info__item--tel {
   padding-left: 0;
 }
+
 .info__item-last {
   text-align: end;
 }
+
 .info__basket {
   background: transparent;
   border: none;
 }
+
 .info__basket img {
   height: 80px;
   cursor: pointer;
+  @media all and (max-width: 600px) {
+  height: 50px;
+    margin-top: 36px;
+  }
+
+
 }
+
 .info__basket img:hover {
   border-radius: 50%;
 }
